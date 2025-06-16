@@ -19,6 +19,6 @@ function processa Texto (texto) {
                 frequencias [i]++;
             }
             
-    console.log(frequencias);
+        return frequencias
     return palavras;
     }
