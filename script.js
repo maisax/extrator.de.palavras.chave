@@ -8,8 +8,7 @@ function mostraPalavrasChave() {
       campoResultado.textContent = palavrasChave.join(", ");
  }
 
-// código omitido
-
 function processaTexto(texto){
-
+    let palavras = texto.split(/[a-zA-Z]+/);
+    return palavras;
 }
