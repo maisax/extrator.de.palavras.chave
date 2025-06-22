@@ -15,7 +15,6 @@ function processaTexto(texto) {
     for(let i in palavras){
        palavras[i] = palavras[i].toLowerCase();
     }
-
     palavras = tiraPalavrasRuins(palavras);
    
     const frequencias = contaFrequencias(palavras);
@@ -41,7 +40,7 @@ function tiraPalavrasRuins(palavras) {
 
     const palavrasBoas = [];
     for (let palavra of palavras){
-        if(! PALAVRAS_RUINS.includes(palavras) && palavra.length > 2){
+        if(! PALAVRAS_RUINS.has(palavras) && palavra.length > 2){
             palavrasBoas.push(palavra);
         }
     }
