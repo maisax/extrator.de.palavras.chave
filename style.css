@@ -1,26 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --cor-destaque: #a90ecf;
-    --cor-gradiente-preto: linear-gradient(113deg, #000 0%, #1E2021 44.96%, #1E2022 100%);
+    --cor-gradiente-preto: linear-gradient(113deg, #440202 0%, #440202 44.96%, #440202 100%);
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Montserrat;
+    font-family: 'Noto Serif', serif;
 }
 
-body {
+ body {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 16px 21px 18px 21px;
-    background: var(--cor-gradiente-preto);
-    height: 100vh;
-    flex-direction: column;
-}
-
+  background-image: url('img/luffy.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
 
 .container {
     display: flex;
@@ -47,7 +47,7 @@ h1 {
     gap: 0.625rem;
     align-self: stretch;
     border-radius: 0.625rem;
-    background: #FFF;
+    background: transparent;
     font-size: 2rem;
 }
 
@@ -84,4 +84,19 @@ h1 {
     max-width: 100%;
     max-height: 50vh;
     overflow: auto;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#botao-palavrachave:hover {
+  animation: pulse 0.6s ease-in-out infinite;
 }
