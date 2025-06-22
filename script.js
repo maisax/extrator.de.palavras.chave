@@ -11,7 +11,7 @@ function mostraPalavrasChave() {
  }
 
 function processaTexto(texto) {
-    let palavras = texto.match(/[a-zá-úà-ùâ-ûãõç]+/gi) || [];
+    let palavras = texto.match(/[a-zá-úà-ùâ-ûãõç]+/gi) || [];6
     for(let i in palavras){
        palavras[i] = palavras[i].toLowerCase();
     }
@@ -40,7 +40,7 @@ function tiraPalavrasRuins(palavras) {
 
     const palavrasBoas = [];
     for (let palavra of palavras){
-        if(! PALAVRAS_RUINS.has(palavras) && palavra.length > 2){
+        if(! PALAVRAS_RUINS.has(palavra) && palavra.length > 2){
             palavrasBoas.push(palavra);
         }
     }
