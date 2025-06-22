@@ -10,7 +10,7 @@ function mostraPalavrasChave() {
  }
 
 function processaTexto(texto) {
-    let palavras = texto.match(/\b\p{L}+\b/gu) || [];
+    let palavras = texto.toLowerCase().match(/[a-zá-úà-ùâ-ûãõç]+/gi) || [];
     for(let i in palavras){
        palavras[i] = palavras[i].toLowerCase();
     }
