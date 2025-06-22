@@ -39,10 +39,12 @@ function processaTexto(texto) {
 }
 
 function tiraPalavrasRuins(palavras) {
+    const  PALAVRAS_RUINS =new Set (["para", "uma", "nós"]);
     const palavrasBoas = [];
     for (let palavra of palavras){
-        if(palavra.length > 2)
+        if(! PALAVRAS_RUINS.has(palavras) && palavra.length > 2){
             palavrasBoas.push(palavra);
+        }
     }
     return palavrasBoas
 }
