@@ -42,7 +42,7 @@ function tiraPalavrasRuins(palavras) {
     const palavrasBoas = [];
     for (let palavra of palavras){
         if(palavra.length > 2)
-            palavrasBoas.push(palavras);
+            palavrasBoas.push(palavra);
     }
     return palavrasBoas
 }
